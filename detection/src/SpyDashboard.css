@@ -1,0 +1,91 @@
+/* Body styling for the whole page */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrolling */
+    background: #000; /* Black background */
+    color: #00fff6; /* Futuristic blue color */
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Container for the Cesium globe */
+  .globe-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  
+  /* Dashboard styling (top-left corner) */
+  .dashboard {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    box-shadow: 0 0 20px #00fff6; /* Glowing shadow */
+    backdrop-filter: blur(5px); /* Blurs background under the dashboard */
+  }
+  
+  /* Glowing text for buttons */
+  .glowing-text {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00fff6;
+    margin: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .glowing-text:hover {
+    color: #fff; /* Changes to white when hovered */
+    text-shadow: 0 0 10px #00fff6, 0 0 20px #00fff6, 0 0 40px #00fff6;
+  }
+  
+  /* Input field (hidden) */
+  input[type="file"] {
+    display: none;
+  }
+  
+  /* Style for the pop-up when clicking on a marker */
+  .image-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 3;
+    box-shadow: 0 0 30px #00fff6;
+  }
+  
+  .image-popup img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .image-popup-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #00fff6;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .image-popup-close:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #00fff6, 0 0 20px #00fff6;
+  }
+  
